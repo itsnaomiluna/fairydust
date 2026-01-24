@@ -10,6 +10,38 @@ body {
   font-family: 'Georgia', serif;
   background: #f4e9f3;
 }
+<head>
+  <meta charset="UTF-8">
+  <title>Fairydust ✨</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #f4e9f3;
+    }
+
+.background-group {
+  background: url("group.jpg") center/cover no-repeat;
+  padding: 60px 20px 120px;
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+  </style>
+</head>
 
 /* MENU */
 nav {
@@ -33,28 +65,24 @@ nav a {
 }
 
 /* HERO */
-.hero {
-  height: 100vh;
-  background: url("hero.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+<body>
 
-.hero-text {
-  background: rgba(255,255,255,0.5);
-  padding: 40px;
-  text-align: center;
-}
+<div class="background-group">
 
-.hero-text h1 {
-  font-size: 50px;
-  margin: 0;
-}
+  <img src="logo.png" class="logo">
 
-.hero-text p {
-  font-size: 18px;
-}
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="regole.html">Regulament</a>
+    <a href="membri.html">Membre</a>
+    <a href="#">Obiective</a>
+    <a href="#">Achievement</a>
+    <a href="#">Concurs</a>
+    <a href="#">Contact</a>
+  </nav>
+
+</div>
+
 
 /* SEZIONI */
 .section {
