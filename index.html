@@ -5,94 +5,63 @@
 <title>Fairydust ✨</title>
 
 <style>
+/* BASE */
 body {
   margin: 0;
   font-family: 'Georgia', serif;
   background: #f4e9f3;
 }
-<head>
-  <meta charset="UTF-8">
-  <title>Fairydust ✨</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background: #f4e9f3;
-    }
-
+/* SEZIONE ALTA CON SFONDO */
 .background-group {
   background: url("group.jpg") center/cover no-repeat;
-  padding: 60px 20px 120px;
+  padding: 60px 20px 140px;
   text-align: center;
 }
 
+/* LOGO */
 .logo {
-  width: 180px;
+  width: 160px;
   margin-bottom: 20px;
 }
 
+/* MENU */
 .menu a {
   margin: 0 15px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  text-shadow: 0 0 5px rgba(0,0,0,0.6);
-}
-
-  </style>
-</head>
-
-/* MENU */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255,255,255,0.7);
-  padding: 15px;
-  text-align: center;
-  z-index: 100;
-  backdrop-filter: blur(6px);
-}
-
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  text-transform: uppercase;
   font-size: 14px;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
 }
 
-/* HERO */
-<body>
+/* TESTO CENTRALE */
+.hero-text {
+  margin-top: 60px;
+  background: rgba(255,255,255,0.5);
+  display: inline-block;
+  padding: 30px 50px;
+}
 
-<div class="background-group">
+.hero-text h1 {
+  margin: 0;
+  font-size: 46px;
+}
 
-  <img src="logo.png" class="logo">
+.hero-text p {
+  margin: 10px 0 0;
+}
 
-  <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="regole.html">Regulament</a>
-    <a href="membri.html">Membre</a>
-    <a href="#">Obiective</a>
-    <a href="#">Achievement</a>
-    <a href="#">Concurs</a>
-    <a href="#">Contact</a>
-  </nav>
-
-</div>
-
-
-/* SEZIONI */
+/* SEZIONE */
 .section {
   padding: 80px 20px;
   display: flex;
   justify-content: center;
 }
 
+/* BOX SCURO */
 .box-dark {
-  background: rgba(30,30,50,0.8);
+  background: rgba(40,40,60,0.85);
   color: white;
   max-width: 1000px;
   display: flex;
@@ -101,13 +70,14 @@ nav a {
 }
 
 .box-dark img {
-  max-width: 350px;
+  width: 320px;
 }
 
 .box-dark h2 {
   font-size: 32px;
 }
 
+/* BOTTONE */
 .button {
   background: #ff4f9a;
   color: white;
@@ -121,7 +91,7 @@ nav a {
 /* TITOLO CIELO */
 .cloud-title {
   background: url("clouds.jpg") center/cover;
-  padding: 60px;
+  padding: 70px 20px;
   text-align: center;
   font-size: 36px;
   color: #ff4f9a;
@@ -137,23 +107,29 @@ nav a {
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="regole.html">Regulament</a>
-  <a href="membri.html">Membre</a>
-  <a href="#">Obiective</a>
-  <a href="#">Achievement</a>
-  <a href="#">Concurs</a>
-  <a href="#">Contact</a>
-</nav>
+<!-- SEZIONE ALTA -->
+<div class="background-group">
 
-<div class="hero">
+  <img src="logo.png" class="logo">
+
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="regole.html">Regulament</a>
+    <a href="membri.html">Membre</a>
+    <a href="#">Obiective</a>
+    <a href="#">Achievement</a>
+    <a href="#">Concurs</a>
+    <a href="#">Contact</a>
+  </div>
+
   <div class="hero-text">
     <h1>+ fairy dust +.</h1>
     <p>bine ai venit</p>
   </div>
+
 </div>
 
+<!-- DESPRE CLUB -->
 <div class="section">
   <div class="box-dark">
     <img src="fairy.png">
@@ -161,6 +137,7 @@ nav a {
       <h2>+despre club+.</h2>
       <p>
         Clubul a fost fondat pe 31.12.2024 de către Naomi.
+        A luat naștere din dorința de a crea un grup de fete pasionate de modă.
         Ne dorim să strălucim împreună ✨
       </p>
       <a class="button" href="#">vrei sa te alaturi?</a>
@@ -168,10 +145,12 @@ nav a {
   </div>
 </div>
 
+<!-- TITOLO -->
 <div class="cloud-title">
   🧚‍♀️ Grupul nostru de zâne frumoase ✨
 </div>
 
+<!-- IMMAGINE GRUPPO -->
 <div class="full-image">
   <img src="group.jpg">
 </div>
