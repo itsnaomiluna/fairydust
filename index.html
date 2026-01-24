@@ -1,83 +1,152 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Fairydust – Home</title>
+<meta charset="UTF-8">
+<title>Fairydust ✨</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #f4e9f3;
+}
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #ffffff;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 100;
-    }
+/* MENU */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+  padding: 15px;
+  text-align: center;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+}
 
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
 
-    section {
-      padding: 100px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .box {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-    }
-  </style>
+.hero-text {
+  background: rgba(255,255,255,0.5);
+  padding: 40px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 18px;
+}
+
+/* SEZIONI */
+.section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.box-dark {
+  background: rgba(30,30,50,0.8);
+  color: white;
+  max-width: 1000px;
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+.box-dark img {
+  max-width: 350px;
+}
+
+.box-dark h2 {
+  font-size: 32px;
+}
+
+.button {
+  background: #ff4f9a;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* TITOLO CIELO */
+.cloud-title {
+  background: url("clouds.jpg") center/cover;
+  padding: 60px;
+  text-align: center;
+  font-size: 36px;
+  color: #ff4f9a;
+}
+
+/* IMMAGINE GRANDE */
+.full-image img {
+  width: 100%;
+  display: block;
+}
+</style>
 </head>
 
 <body>
 
-<!-- MENU -->
 <nav>
-  <a href="index.html">HOME</a>
-  <a href="regole.html">REGOLE</a>
-  <a href="membri.html">MEMBRI</a>
+  <a href="index.html">Home</a>
+  <a href="regole.html">Regulament</a>
+  <a href="membri.html">Membre</a>
+  <a href="#">Obiective</a>
+  <a href="#">Achievement</a>
+  <a href="#">Concurs</a>
+  <a href="#">Contact</a>
 </nav>
 
-<!-- HOME -->
-<section>
-  <div class="box">
-    <h1>Fairydust ✨</h1>
-    <p style="text-align:center;">
-      Benvenuto/a! Questa è la Home aggiornata.<br>
-      Usa il menu per navigare tra le pagine Regole e Membri.
-    </p>
+<div class="hero">
+  <div class="hero-text">
+    <h1>+ fairy dust +.</h1>
+    <p>bine ai venit</p>
+  </div>
+</div>
 
-    <!-- Esempio di video YouTube -->
-    <div style="max-width:800px; margin:auto; margin-top:20px;">
-      <iframe 
-        width="100%" 
-        height="450"
-        src="https://www.youtube.com/embed/INSERISCI_ID_VIDEO"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <!-- Esempio di immagine -->
-    <div style="max-width:800px; margin:auto; margin-top:20px;">
-      <img src="https://via.placeholder.com/600x300" style="width:100%; border-radius:10px;">
+<div class="section">
+  <div class="box-dark">
+    <img src="fairy.png">
+    <div>
+      <h2>+despre club+.</h2>
+      <p>
+        Clubul a fost fondat pe 31.12.2024 de către Naomi.
+        Ne dorim să strălucim împreună ✨
+      </p>
+      <a class="button" href="#">vrei sa te alaturi?</a>
     </div>
   </div>
-</section>
+</div>
+
+<div class="cloud-title">
+  🧚‍♀️ Grupul nostru de zâne frumoase ✨
+</div>
+
+<div class="full-image">
+  <img src="group.jpg">
+</div>
 
 </body>
 </html>
-
